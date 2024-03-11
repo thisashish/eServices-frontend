@@ -1,24 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
-import { categories, L } from "../Utils";
+import { L } from "../Utils";
 import "./CategoryLocationSelector.css";
 import "./CategoryLocationBox.css";
 import { FindC } from "../../../API/C/FindC";
 
-import { IoSearchCircle } from "react-icons/io5"; // ICON
+import { IoSearchCircle } from "react-icons/io5";
 
-export const CategoryLocationSelector = (c) => {
-  const categories = FindC();
-  const [locationopen, setLocationopen] = useState(
-    c.defaultLocation === undefined ? true : false
-  );
+export const CategoryLocationSelector = ({ defaultLocation }) => { // Use object destructuring to get defaultLocation
+  const categoriesData = FindC(); // Rename to avoid shadowing the imported categories array
+  const [locationOpen, setLocationOpen] = useState(defaultLocation === undefined ? true : false);
   const locationDivRef = useRef(null);
 
   useEffect(() => {
     const handleOutsideClick = (e) => {
-      if (
-        locationDivRef.current &&
-        !locationDivRef.current.contains(e.target)
-      ) {
+      if (locationDivRef.current && !locationDivRef.current.contains(e.target)) {
         window.location.href = "/lakhimpur";
       }
     };
@@ -43,29 +38,21 @@ export const CategoryLocationSelector = (c) => {
             <input
               placeholder="Select Your Location"
               className="CategoryLocationSelector_location_input"
-              defaultValue={c.defaultLocation}
-              onChange={() => setLocationopen(true)}
+              defaultValue={defaultLocation}
+              onChange={() => setLocationOpen(true)}
             />
-            {locationopen ? (
-              <div
-                className="CategoryLocationSelector_location_div"
-                ref={locationDivRef}
-              >
+            {locationOpen && (
+              <div className="CategoryLocationSelector_location_div" ref={locationDivRef}>
                 {L.map((location) => (
                   <div
                     key={location}
                     className="CategoryLocationSelector_location_option"
-                    onClick={() => {
-                      //window.location.href = location;
-                      setLocationopen(false);
-                    }}
+                    onClick={() => setLocationOpen(false)}
                   >
                     {location}
                   </div>
                 ))}
               </div>
-            ) : (
-              <></>
             )}
           </div>
         </div>
@@ -75,13 +62,10 @@ export const CategoryLocationSelector = (c) => {
           <select
             id="category-select"
             className="category-select"
-            onChange={(e) =>
-              (window.location.href =
-                c.defaultLocation + "/" + e.target.value)
-            }
+            onChange={(e) => (window.location.href = defaultLocation + "/" + e.target.value)}
           >
             <option value="">Select a category</option>
-            {categories.map((category) => (
+            {categoriesData.map((category) => (
               <option key={category._id} value={category.name}>
                 {category.name}
               </option>
