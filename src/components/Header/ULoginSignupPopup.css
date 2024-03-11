@@ -1,0 +1,18 @@
+.ULoginSignupPopup
+{
+    background-color: rgba(255, 255, 255, 0.796);
+    padding: 1rem;
+
+   
+
+    top: 50%; /* Adjust the top position as needed */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%); /* Center the popup horizontally and vertically */
+    z-index: 2; /* Make sure it's on top of other content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a popup effect */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

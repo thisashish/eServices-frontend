@@ -1,0 +1,81 @@
+html, body {
+  height: 100%; 
+   overflow: hidden;
+}
+
+
+.heading{
+color:white;
+text-align: center;
+padding-top: 19px;
+    margin-top: -8px;
+}
+
+/* .SPRegistration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: -18px auto;
+} */
+
+.SPRegistration1{
+  margin-bottom: -8px;
+  position:static;
+  padding-bottom: 100px;
+
+  background-image: url('./registration.png'); 
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.SPRegistration_input {
+  border: 4px solid rgb(97, 93, 93);
+  padding: .8rem;
+  margin: .5rem;
+  width:100%;
+  border-radius: 8px;
+  font-family: ui-serif;
+    font-weight: bold;
+  
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.SPRegistration_select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: ui-sans-serif;
+    font-weight: bold;
+}
+
+.SPRegistration_button {
+  margin-top: 13px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 13px 51px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.SPRegistration_button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for error messages (You can adjust as needed) */
+.alert {
+  color: #ff0000;
+  font-size: 14px;
+  margin: 5px 0;
+}
+

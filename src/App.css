@@ -1,0 +1,8 @@
+/* for website body */
+.webPageBody{
+    width: 100%;
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2A9D8F;
+}

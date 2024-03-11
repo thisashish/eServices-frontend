@@ -1,0 +1,97 @@
+/* CategoryLocationBox Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto+Slab:wght@500&display=swap");
+.category-location-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  gap: 10px;
+}
+
+/* Category box styles */
+.category-box {
+  margin-top: 3%;
+  margin-left: 35%;
+  flex: 1; /* Allow it to take up half of the available space */
+  display: flex;
+  align-items: center;
+}
+
+.category-box label {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.category-select {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+
+  font-family: "Roboto Slab", serif;
+}
+
+/* Style the select dropdown arrow */
+.category-select::-ms-expand,
+.category-select::-ms-down-arrow,
+.category-select::-webkit-select {
+  appearance: none;
+  display: none;
+}
+
+/* Style the select dropdown arrow for Firefox */
+.category-select::-moz-focus-inner {
+  border-style: none;
+}
+
+/* Apply custom styles to the select dropdown options */
+.category-select option {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+}
+
+/* Location box styles */
+.location-box {
+  margin-top: 3%;
+  flex: 1; /* Allow it to take up half of the available space */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.location-box label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.location-select {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  font-family: "Roboto Slab", serif;
+}
+
+/* Style the select dropdown arrow */
+.location-select::-ms-expand,
+.location-select::-ms-down-arrow,
+.location-select::-webkit-select {
+  appearance: none;
+  display: none;
+}
+
+/* Style the select dropdown arrow for Firefox */
+.location-select::-moz-focus-inner {
+  border-style: none;
+}
+
+/* Apply custom styles to the select dropdown options */
+.location-select option {
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+}

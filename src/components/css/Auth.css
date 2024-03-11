@@ -1,0 +1,23 @@
+/* Auth.css */
+.google-sign-in-button {
+    white-space:nowrap;
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .google-sign-in-button:hover {
+    background-color: #357ae8; /* Slightly darker shade of Google Blue on hover */
+  }
+  
+  /* Center the button horizontally */
+  .google-sign-in-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  

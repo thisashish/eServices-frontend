@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=FontName&display=swap');
+.ulogin{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 420px;
+  box-shadow: 0 -5px -5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  /* border: 1px solid black; */
+  text-align: center;
+}y
+  
+.ulogin h1{
+    font-size:36px;
+    text-align:center;
+    font-weight: bold;
+}
+.ulogin p{
+  font-size:14.5px;
+  text-align:center;
+  margin-top:10px;
+  font-weight: bold;
+  color: white;
+}
+
+.ulogin .input-box ,.ulogin .ULogin_form_password{
+    width:100%;
+    height:50px;   
+    margin:30px 0;
+    position:relative;
+}
+ 
+.ULogin_form_input{
+  width:80%;
+  height:100%;
+  background:transparent;
+  border:none;
+  outline:none;
+  border:2px solid rgba(255,255,255,.2);
+  border-radius:40px;
+  font-size:16px;
+  color:#fff;
+  margin-bottom: 20px;
+ 
+
+}
+.ULogin_form_input::placeholder{
+    color:#fff;
+    font-size: 14px;
+    padding: 10px 0;
+  /* Adjust the margin to control the distance from the left */
+  margin-left: 10px;
+}
+
+.ULogin_form_password .ULogin_form_input{
+  position: relative;
+}
+
+.ULogin_showpass {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  right : 4rem;
+  bottom : 0.5rem;
+}
+
+.ULogin_btn{
+    width:80%;
+    height:45px;
+    background:#fff;
+    border:none;
+    outline:none;
+    border-radius:40px;
+    box-shadow:0 0 rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    color:#333;
+    font-weight:600;
+    margin:10px;
+    align-items: center;
+    
+}
+.ulogin p{
+    font-size:14.5px;
+    text-align:center;
+    margin-top:20px;
+}
+
+.ulogin p a{
+
+    color :#fff;
+
+    
+  
+  color-interpolation-filters:#fff;
+
+    text-decoration:none;
+    font-weight:600;
+}
+
+.ulogin p a:hover{
+    text-decoration:underline;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .ULogin_form_input,
+  .ULogin_btn {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ulogin {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ULogin_form_input,
+  .ULogin_btn {
+    width: 90%;
+  }
+}
+
+
+
+
+
+  

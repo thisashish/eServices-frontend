@@ -1,0 +1,40 @@
+/* Stylish and Responsive Search Bar CSS */
+
+/* Search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Search input field */
+  .FormControl {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  /* Search button */
+  .Button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .Button:hover {
+    background-color: #218838;
+  }
+  

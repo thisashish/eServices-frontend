@@ -1,0 +1,102 @@
+.profile-area{
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 150px;
+    display: block;
+    margin-bottom: 19px;
+}
+.circular-input {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    /* background-color: #ccc; */
+    background-image: url('../../../public/images/service-provider.png');
+    text-align: center;
+    cursor: pointer;
+    background-size: 100%;
+    border: 4px solid rgb(111, 170, 247);
+}
+/* drop-down css */
+.dropDown-update-profile{
+    color: black;
+    font-weight: bold;
+    overflow: hidden;
+    top: 20%;
+    margin-left: 80px;
+    position: fixed;
+    max-width: 50%;
+    z-index: 1;
+    background-color: rgb(0, 128, 255);
+    padding: 2px;
+    width: 72px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+/*.dropDown-update-profile button{
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+    border: 0px;
+    margin: 2px;
+    background-color: white;
+    overflow: hidden;
+}*/
+.file-taker{
+    width: 100%;
+    height: 10px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.dropDown-update-profile input[type="file"]{
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+}
+/* submit button css */
+.submit-button{
+    border: 0px;
+    padding: 10px 15px;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 7px rgb(187, 186, 186);
+    border-radius: 7px;
+    font-weight: bold;
+    transition: ease-in 0.3s;
+    margin-bottom: 10px;
+    background-color: rgb(118, 193, 255);
+}
+.submit-button h1{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.submit-button:hover{
+    box-shadow: 10px 10px 10px rgb(187, 186, 186);
+    transition: ease-out 0.3s;
+    transform: scale(1.1,1.1);
+}
+.Save-Icon{
+    width: 30px;
+    height: 30px;
+}
+
+.circular-input label{
+    display: block;
+    padding: 10px;
+    /* background-color: #3498db; */
+    color: #1f1e1e;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+button {
+    margin-right:1%;
+}

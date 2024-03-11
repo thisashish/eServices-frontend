@@ -1,0 +1,37 @@
+/* 
+
+.category-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-box label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .category-select {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .category-select::-ms-expand,
+  .category-select::-ms-down-arrow,
+  .category-select::-webkit-select {
+    appearance: none;
+    display: none;
+  }
+  
+  .category-select::-moz-focus-inner {
+    border-style: none;
+  }
+  
+  .category-select option {
+    font-size: 16px;
+  }
+   */
