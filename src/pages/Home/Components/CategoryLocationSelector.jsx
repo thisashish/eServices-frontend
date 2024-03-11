@@ -6,8 +6,8 @@ import { FindC } from "../../../API/C/FindC";
 
 import { IoSearchCircle } from "react-icons/io5";
 
-export const CategoryLocationSelector = ({ defaultLocation }) => { // Use object destructuring to get defaultLocation
-  const categoriesData = FindC(); // Rename to avoid shadowing the imported categories array
+export const CategoryLocationSelector = ({ defaultLocation }) => {
+  const categoriesData = FindC();
   const [locationOpen, setLocationOpen] = useState(defaultLocation === undefined ? true : false);
   const locationDivRef = useRef(null);
 
@@ -18,11 +18,9 @@ export const CategoryLocationSelector = ({ defaultLocation }) => { // Use object
       }
     };
 
-    // Add a click event listener to the document
     document.addEventListener("click", handleOutsideClick);
 
     return () => {
-      // Remove the click event listener when the component unmounts
       document.removeEventListener("click", handleOutsideClick);
     };
   }, []);
@@ -43,7 +41,7 @@ export const CategoryLocationSelector = ({ defaultLocation }) => { // Use object
             />
             {locationOpen && (
               <div className="CategoryLocationSelector_location_div" ref={locationDivRef}>
-                {L.map((location) => (
+                {Array.isArray(L) && L.map((location) => (
                   <div
                     key={location}
                     className="CategoryLocationSelector_location_option"
@@ -72,7 +70,6 @@ export const CategoryLocationSelector = ({ defaultLocation }) => { // Use object
             ))}
           </select>
         </div>
-        
       </div>
     </>
   );
